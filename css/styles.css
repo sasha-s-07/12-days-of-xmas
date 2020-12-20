@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Mono&family=Parisienne&family=Tangerine:wght@700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #e3f3ac !important;
+}
+
+/* nav bar styles */
+#site-name {
+  font-family: 'PT Mono', serif;
+}
+
+#logo {
+  text-align: center;
+  font-size: 25px;
+}
+
+#header {
+  background-color: #c060a1;
+  padding: 0.75em;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#header a {
+  color: #fff5ea;
+  text-decoration: none;
+}
+
+#header a:hover {
+  text-decoration: underline;
+}
+
+#main-nav .menu {
+  list-style: none;
+  text-align: center;
+}
+
+#main-nav li {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  margin-right: 1.5em;
+  margin-left: 1em;
+}
+
+#hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+}
+
+.page-wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.title>h1 {
+  font-family: 'Parisienne', serif;
+  font-size: 70px;
+  text-align: center;
+  flex: 3;
+}
+
+.text>h2 {
+  font-size: 40px;
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px 0 20px 0;
+  font-family: 'Parisienne', serif;
+}
+
+.xmas>h2 {
+  font-family: 'Parisienne', serif;
+  font-size: 70px;
+  text-align: center;
+}
+
+.msg>h2 {
+  font-size: 25px;
+  font-family: serif;
+  text-align: center;
+}
+
+.title {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  animation: notes 3s;
+  animation-iteration-count: infinite;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  background-color: #44c662;
+  padding: 40px;
+  transition: all .2s ease-out;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.image>img {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-10deg);
+  }
+
+  20% {
+    transform: translate(-1px, 0px) rotate(10deg);
+  }
+
+  30% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(-10deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(10deg);
+  }
+
+  60% {
+    transform: translate(-1px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(1px, 1px) rotate(-10deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(10deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(10deg);
+  }
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.5) translate(30px, -30px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(1.5)translate(-30px, -50px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1)translate(100px, -100px);
+    opacity: 0;
+  }
+}
+
+.text:hover {
+  transform: translate(0, 200px);
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.image {
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #f23a3a;
+  padding: 2.8em;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+#footer {
+  background-color: #c060a1;
+  padding-left: 2em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2em;
+  color: #fff5ea;
+  position: relative;
+  clear: both;
+}
+
+#copyright {
+  padding: 1em 0;
+}
+
+@media screen and (max-width: 900px) {
+  #logo {
+    float: left;
+    margin-left: 1em;
+  }
+
+  #main-nav {
+    display: inline-block;
+  }
+
+  #main-nav li {
+    display: block;
+    padding: 5px;
+    margin: 0.5em;
+    text-align: left;
+  }
+}
