@@ -266,4 +266,7 @@ a {
   transition: 1s ease-in-out;
   cursor: pointer;
 }
+  .msg>h2 {
+  text-align: left;
+}
 }
