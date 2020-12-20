@@ -256,6 +256,9 @@ a {
   }
 }
 @media screen and (max-width: 800px) {
+  body {
+  cursor: pointer;
+  }
 .text:hover,.text:active{
   transform: translate(0, 200px);
   display: inline-block;
