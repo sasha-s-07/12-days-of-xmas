@@ -259,7 +259,7 @@ a {
   body {
   cursor: pointer;
   }
-.text:hover,.text:active{
+.text:hover,.text:active.,text:focus{
   transform: translate(0, 200px);
   display: inline-block;
   transform-style: preserve-3d;
