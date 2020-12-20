@@ -255,3 +255,12 @@ a {
     text-align: left;
   }
 }
+@media screen and (max-width: 800px) {
+.text:active{
+  transform: translate(0, 200px);
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+}
